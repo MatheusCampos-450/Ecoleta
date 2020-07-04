@@ -114,7 +114,7 @@ function handleSelectedItem(even) {
 // 2º Forma - Mais ou menos simples  (Arrow Function)
 // () => {}
 
-// 3º Forma - Simples
+// 3º Forma - Simples (Arrow Function Simples)
 // variavel => retorno da função
 
 
