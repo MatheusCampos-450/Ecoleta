@@ -1,7 +1,12 @@
+/* NESTE ARQUIVO ESTAMOS DEFININDO CONFIGURAÇÕES QUE SERÃO HERDADAS EM TODOS OS ARQUIVOS FUTURAMENTE DESENVOLVIDOS */
+
+
 :root {
     --title-color: #322153;
     --primary-color: #34cb79;
 }
+/* Declarando constantes que armazenam informações que seram usadas de repetidamente no código */
+
 
 * {
     margin: 0;
@@ -9,24 +14,30 @@
     box-sizing: border-box;
 
 }
+/* Deixando predefinido uma configuração para todos os elementos do HTML */
+
 
 html {
     font-family: 'Roboto', sans-serif;
 }
+/* Definindo a fonte de toda a página */
 
 
 body{
     background: #f0f0f5;
     -webkit-font-smoothing: antialiased;
 }
+/* Configuração que melhora a imagem e o texto nos navegadores */
 
 
 a {
     text-decoration: none;
 }
+/* Configuração que retira o sublinhado dos link's */
 
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'ubuntu', sans-serif;
     color: var(--title-color);
 }
+/* Definindo uma fonte específica para os títulos */
