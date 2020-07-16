@@ -56,26 +56,26 @@ document
 
 
 
-    
+      
 
 // Itens de Coleta
 
-const itemsToCollect = document.querySelectorAll(".items-grid li")
+const itemsToCollect = document.querySelectorAll(".items-grid li") // Selecionando todos os elementos que possuem a classe .items-grid li
 
 for (const item of itemsToCollect) {
-    item.addEventListener("click", handleSelectedItem)
+    item.addEventListener("click", handleSelectedItem) // Identificando quando alguma opção for selecionada, e assim que for selecionada, será chamada a função handleSelectedItem
 }
 
-const collectedItems = document.querySelector("input[name=items]")
+const collectedItems = document.querySelector("input[name=items]") // Selecionando o elemento input que receberá o valor de todos os ítens selecionados
 
-let selectedItems = []
+let selectedItems = [] // Lista de ítens selecionados
 
 
 function handleSelectedItem(even) {
     const itemLi = event.target
 
-    // adicionar e remover uma classe em JavaScript
-    itemLi.classList.toggle("selected") 
+    // adicionar ou remover uma classe em JavaScript
+    itemLi.classList.toggle("selected") // Esse método irá adicionar ou remover a classe definida do elemento HTML
 
 
     const itemId = itemLi.dataset.id
@@ -85,6 +85,8 @@ function handleSelectedItem(even) {
         const itemFound = item == itemId
         return itemFound
     })
+
+    // const alreadySelected = selectedItems.findIndex( item => item == itemId)
 
     // Se já estiver selecionado, tirar da seleção
     if( alreadySelected >= 0 ){
