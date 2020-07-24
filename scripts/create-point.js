@@ -71,22 +71,22 @@ const collectedItems = document.querySelector("input[name=items]") // Selecionan
 let selectedItems = [] // Lista de ítens selecionados
 
 
-function handleSelectedItem(even) {
-    const itemLi = event.target
+function handleSelectedItem(event) { // Função será chamada sempre que                                                                                                                                                                                                                                   
+    const itemLi = event.target // Diz onde ocorreu a mudança
 
     // adicionar ou remover uma classe em JavaScript
     itemLi.classList.toggle("selected") // Esse método irá adicionar ou remover a classe definida do elemento HTML
 
 
-    const itemId = itemLi.dataset.id
+    const itemId = itemLi.dataset.id // Retorna o id declarado no elemento no método data
 
     // Verificar se existem itens selecionados, se sim, pegar os itens selecionados
     const alreadySelected = selectedItems.findIndex( item => {
         const itemFound = item == itemId
         return itemFound
     })
-
     // const alreadySelected = selectedItems.findIndex( item => item == itemId)
+
 
     // Se já estiver selecionado, tirar da seleção
     if( alreadySelected >= 0 ){
