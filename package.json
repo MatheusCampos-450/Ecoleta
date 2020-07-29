@@ -1,0 +1,27 @@
+{
+  "name": "ecoleta",
+  "version": "1.0.0",
+  "description": "Desenvolvimento Web com JavaScript, HTML e CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusCampos-450/Ecoleta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusCampos-450/Ecoleta/issues"
+  },
+  "homepage": "https://github.com/MatheusCampos-450/Ecoleta#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
